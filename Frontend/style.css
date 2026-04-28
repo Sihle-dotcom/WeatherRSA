@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #6eb5d8, #3a80b0, #1a5f8a);
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    gap: 8px;
+    padding: 20px 16px 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: none;
+    background: rgba(255, 255, 255, 0.25);
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-bar input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.btn {
+    padding: 10px 18px;
+    border-radius: 20px;
+    border: none;
+    background: rgba(255, 255, 255, 0.25);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+#weatherDisplay {
+    text-align: center;
+    padding: 20px 16px;
+    width: 100%;
+    max-width: 400px;
+}
+
+#city {
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 4px;
+}
+
+#condition {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 4px;
+}
+
+#temperature {
+    font-size: 80px;
+    font-weight: 100;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+#highLow {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 0 16px 32px;
+    margin-top: 16px;
+}
+
+#dailyForecast {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+.forecast-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.forecast-row:last-child {
+    border-bottom: none;
+}
+
+.forecast-day {
+    flex: 1;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.forecast-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.forecast-temps {
+    flex: 1;
+    text-align: right;
+    font-size: 17px;
+}
+
+.forecast-temps .high {
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.forecast-temps .low {
+    opacity: 0.6;
+}
+
+/* Map page */
+body.map-page {
+    display: block;
+    background: none;
+}
+
+#map {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#windyFrame {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.back-btn {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(6px);
+}

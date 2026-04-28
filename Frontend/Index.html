@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherRSA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="search-bar">
+        <input type="text" id="userInput" placeholder="Enter your city"/>
+        <button class="btn" onclick="search()">Search</button>
+    </div>
+    <div id="weatherDisplay">
+        <h1 id="city">--</h1>
+        <p id="condition">--</p>
+        <h1 id="temperature">--</h1>
+        <p id="highLow">H:--° L:--°</p>
+    </div>
+    <button class="btn" onclick="openMap()">Map</button>
+    <div class="container">
+        <div id="dailyForecast"></div>
+    </div>
+</body>
+</html>
